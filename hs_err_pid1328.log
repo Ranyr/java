@@ -1,0 +1,114 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 160088 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=1328, tid=9436
+#
+# JRE version:  (8.0_45-b15) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.45-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000202d800):  JavaThread "Unknown thread" [_thread_in_vm, id=9436, stack(0x0000000002540000,0x0000000002640000)]
+
+Stack: [0x0000000002540000,0x0000000002640000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x32b57a]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000202d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=9436, stack(0x0000000002540000,0x0000000002640000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x000000013f1f0000 - 0x000000013f227000 	C:\Program Files\Java\jdk1.8.0_45\bin\java.exe
+0x00000000778e0000 - 0x0000000077a8b000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00000000777c0000 - 0x00000000778df000 	C:\Windows\system32\kernel32.dll
+0x000007fefda30000 - 0x000007fefda9b000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefe320000 - 0x000007fefe3fb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007feff1c0000 - 0x000007feff25f000 	C:\Windows\system32\msvcrt.dll
+0x000007feff4c0000 - 0x000007feff4df000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefdeb0000 - 0x000007fefdfde000 	C:\Windows\system32\RPCRT4.dll
+0x00000000776c0000 - 0x00000000777ba000 	C:\Windows\system32\USER32.dll
+0x000007fefdc10000 - 0x000007fefdc77000 	C:\Windows\system32\GDI32.dll
+0x000007feff9d0000 - 0x000007feff9de000 	C:\Windows\system32\LPK.dll
+0x000007fefdde0000 - 0x000007fefdeaa000 	C:\Windows\system32\USP10.dll
+0x000007fefc1c0000 - 0x000007fefc3b4000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_fa645303170382f6\COMCTL32.dll
+0x000007feffa60000 - 0x000007feffad1000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefddb0000 - 0x000007fefddde000 	C:\Windows\system32\IMM32.DLL
+0x000007feffae0000 - 0x000007feffbe9000 	C:\Windows\system32\MSCTF.dll
+0x0000000074800000 - 0x00000000748d2000 	C:\Program Files\Java\jdk1.8.0_45\jre\bin\msvcr100.dll
+0x0000000071290000 - 0x0000000071b13000 	C:\Program Files\Java\jdk1.8.0_45\jre\bin\server\jvm.dll
+0x000007fef4c70000 - 0x000007fef4c79000 	C:\Windows\system32\WSOCK32.dll
+0x000007feff6c0000 - 0x000007feff70d000 	C:\Windows\system32\WS2_32.dll
+0x000007feff1b0000 - 0x000007feff1b8000 	C:\Windows\system32\NSI.dll
+0x000007fefaeb0000 - 0x000007fefaeeb000 	C:\Windows\system32\WINMM.dll
+0x000007fefc7d0000 - 0x000007fefc7dc000 	C:\Windows\system32\VERSION.dll
+0x0000000077aa0000 - 0x0000000077aa7000 	C:\Windows\system32\PSAPI.DLL
+0x0000000075250000 - 0x000000007525f000 	C:\Program Files\Java\jdk1.8.0_45\jre\bin\verify.dll
+0x0000000075220000 - 0x0000000075249000 	C:\Program Files\Java\jdk1.8.0_45\jre\bin\java.dll
+0x0000000075170000 - 0x0000000075186000 	C:\Program Files\Java\jdk1.8.0_45\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 
+java_command: top
+java_class_path (initial): C:\Program Files\glassfish-4.1.1\javadb\lib\derbyclient.jar;C:\Users\radhika\Documents\NetBeansProjects\JavaApplication2\build\classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\
+USERNAME=radhika
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7600 (6.1.7600.16385)
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, clmul, tsc, tscinvbit
+
+Memory: 4k page, physical 1990000k(593212k free), swap 7960000k(5120k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.45-b02) for windows-amd64 JRE (1.8.0_45-b15), built on Apr 30 2015 12:40:44 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Feb 15 02:58:08 2020
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
